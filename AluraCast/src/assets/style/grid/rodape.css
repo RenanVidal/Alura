@@ -1,0 +1,22 @@
+.rodape {
+    display: grid;
+    grid-template-columns: repeat(12, auto);
+    grid-template-rows: auto auto;
+    /* column-gap: 0.5rem; */
+
+}
+
+.rodape__titulo {
+    justify-self: center;
+    align-self: center;
+}
+
+.rodape__imagem {
+    grid-area: 1/1/3/2;
+    align-self: center;
+    justify-self: center;
+}
+
+.rodape__botao--volume-down {
+    grid-area: ;
+}
