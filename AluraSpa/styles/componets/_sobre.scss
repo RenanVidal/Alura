@@ -1,0 +1,29 @@
+@import '../abstract/variaveis';
+
+.sobre {
+    text-align: center;
+    .img-sobre {
+        margin: 5rem auto 1rem auto;
+    }
+    h3 {
+        font-size: $tamanho-do-texto / 2.5 ;
+        color: $cor-secundaria;
+        text-transform: uppercase;
+        font-weight: 300;
+        text-align: center;
+        margin: 1rem;
+    }
+    h4 {
+        text-align: center;
+        font-size: $tamanho-do-texto / 1.2;
+        margin-bottom: 25px;
+        font-weight: 300;
+    }
+    p {
+        font-size: $tamanho-do-texto / 1.7;
+        font-weight: 300;
+        color: $cor-primaria;
+        line-height: 1.25rem;
+        margin-bottom: 80px;
+    }
+}
