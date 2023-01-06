@@ -35,6 +35,22 @@
     display: flex;
 }
 
+.videoSobre-sobre {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 10;
+}
+
+.videoSobre-sobre-list {
+    flex-grow:1;
+}
+
+.videoSobre-video {
+    flex-grow: 1;
+}
+
+
 /* Rodapé*/
 
 .rodapePrincipal-navMap-list {
@@ -82,6 +98,16 @@
 
     .conteudoPrincipal-cursos-link {
         width: 100%;
+    }
+
+    .videoSobre .container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .videoSobre-video {
+        margin: 0 auto;
+        flex-shrink: 2;
     }
 
     .rodapePrincipal-navMap-list {
