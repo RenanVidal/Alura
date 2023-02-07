@@ -1,12 +1,18 @@
-const robotron = document.getElementById('robotron');
+const subtrair = document.getElementById('subtrair');
+const somar = document.getElementById('somar');
+const braco = document.getElementById('braco');
+const controle = document.querySelectorAll('.controle-ajuste');
 
-robotron.addEventListener("click", (evento) => {
-    console.log (evento)
+controle.forEach( (elemento) =>  {
+    elemento.addEventListener ("click", (evento) => {
+        manipulaDados(evento.target.textContent);
+    });
 });
 
-function dizOi (nome) {
-    console.log("Oi " + nome);
-    console.log('Bem-vindo ao robotron 2000');
+function manipulaDados(operacao) {
+    if (operacao === '-') {
+        braco.value = parseInt(braco.value) - 1;
+    } else {
+        braco.value = parseInt(braco.value) + 1;
+    };
 };
-
-dizOi('Renan');
