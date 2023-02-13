@@ -41,7 +41,7 @@ main {
     height: 110%;
     z-index: 1;
     position: absolute;
-    left: -20%;
+    /* left: -10%; */
     top: -5%;
 }
 
@@ -207,6 +207,26 @@ main {
     order: 1;
     flex-basis: 35%;
     margin: 10px 0 0;
+}
+
+/****************************** Cor *****/
+
+.alterar {
+    margin: 2px;
+    width: 200px;
+    font-size: 1em;
+    font-weight: bold;
+    text-transform: uppercase;
+    border: 3px solid black;
+    clip-path: polygon(100% 0, 100% calc(100% - 30px), calc(100% - 30px) 100%, 0 100%, 0 0);
+    cursor: pointer;
+}
+
+.botoes {
+   position: relative;
+   right: 5%;
+   bottom: 10%;
+   display: flex;
 }
 
 @media screen and (max-width: 1600px) {
