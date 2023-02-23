@@ -27,7 +27,7 @@ function checkIfTheGuessIsValid (guess) {
             <button id="play-again" class="btn-play">Jogar Novamente</button>
         `
     } else if (number > secretNumber) {
-        elementGuess.innerHTML += '<div>O número secreto é maior <i class="fa-solid fa-down-long"></i></div>';
+        elementGuess.innerHTML += '<div>O número secreto é menor <i class="fa-solid fa-down-long"></i></div>';
     } else {
         elementGuess.innerHTML += '<div>O número secreto é maior <i class="fa-solid fa-up-long"></i></div>'
     };
