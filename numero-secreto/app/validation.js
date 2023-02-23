@@ -2,8 +2,17 @@ function checkIfTheGuessIsValid (guess) {
     const number = +guess;
 
     if (invalidGuess(number)) {
-        elementGuess.innerHTML += '<div>Valor inválido!</div>';
-        return
+        if (guess === "game over") {
+            document.body.innerHTML =`
+                <h2>Game Over!!!</h2>
+                <h3>Pressione o botão para jogar novamente</h3>
+                <button id="play-again" class="btn-play" >Jogar novamente</button>
+            `;
+            document.body.style.backgroundColor = "black";
+        } else {
+            elementGuess.innerHTML += '<div>Valor Inválido</div>';
+            return
+        }
     };
 
     if (validNumber(number)) {
