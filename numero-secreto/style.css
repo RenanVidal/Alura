@@ -56,7 +56,7 @@ h3 {
 }
 
 
-@media(max-width: 140px) {
+@media(max-width: 340px) {
 h1 {
     font-size: 3em;
 }
