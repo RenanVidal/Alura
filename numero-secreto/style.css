@@ -56,40 +56,39 @@ h3 {
 }
 
 
-@media(max-width: 340px) {
-h1 {
-    font-size: 3em;
-}
+@media(max-width: 420px) {
+    h1 {
+        font-size: 3em;
+    }
 
-h2 {
-    font-size: 1.5em;
-}
+    h2 {
+        font-size: 1.5em;
+    }
 
-h3 {
-    font-size: 1.5em;
-    margin-top: 20px;
-}
+    h3 {
+        font-size: 1.5em;
+        margin-top: 20px;
+    }
 
-.message {
-    font-size: 1em;
-    margin-top: 2em;
-}
+    .message {
+        font-size: 1em;
+        margin-top: 2em;
+    }
 
-.box {
-    border: 2px solid var(--primary-color);
-    display: inline-block;
-    font-size: 1.5em;
-    padding: 10px;
-    margin: 40px;
-}
+    .box {
+        border: 2px solid var(--primary-color);
+        display: inline-block;
+        font-size: 1.5em;
+        padding: 10px;
+        margin: 40px;
+    }
 
-.btn-play {
-    padding: 8px 15px;
-    border: 0;
-    background: var(--primary-color);
-    border-radius: 5px;
-    margin-top: 20px;
-    font-size: 1em;
-}
-
+    .btn-play {
+        padding: 8px 15px;
+        border: 0;
+        background: var(--primary-color);
+        border-radius: 5px;
+        margin-top: 20px;
+        font-size: 1em;
+    }
 }
