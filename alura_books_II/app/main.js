@@ -8,3 +8,4 @@ async function getBuscarLivrosDaAPI () {
     let livrosComDesconto = aplicarDesconto(livros);
     exibirOsLivrosNaTela (livrosComDesconto);
 };
+
