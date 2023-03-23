@@ -83,6 +83,20 @@
       "url": "https://www.youtube.com/embed/IGFSiBJIXFQ",
       "imagem": "https://purr.objects-us-east-1.dream.io/i/OoNx6.jpg",
       "id": 12
+    },
+    {
+      "titulo": "Guia de Carreira PHP | #HipstersPontoTube",
+      "descricao": "357 mil visualizações",
+      "url": "https://youtube.com/embed/ETohL_o3SEI ",
+      "imagem": "https://purr.objects-us-east-1.dream.io/i/OoNx6.jpg",
+      "id": 13
+    },
+    {
+      "titulo": "Como criar animações com CSS",
+      "descricao": "3 mil visualizações",
+      "url": "https://youtube.com/embed/D_5CRYi4qw4",
+      "imagem": "https://yt3.ggpht.com/U6fAFkgbV7f3EFJ-NrCKU81RIfrBBl1u3XAZuWFTRyUDvmODp2SSGNcDAhuWlkxERHb8bOix=s48-c-k-c0x00ffffff-no-rj",
+      "id": 14
     }
   ]
 }
