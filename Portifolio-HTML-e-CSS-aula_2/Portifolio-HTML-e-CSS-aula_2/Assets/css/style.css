@@ -12,8 +12,24 @@ body {
     box-sizing: border-box;
 }
 
+.cabecalho {
+    padding: 2% 0% 0% 15%;
+}
+
+.cabecalho__menu {
+    display: flex;
+    gap: 80px;
+}
+
+.cabecalho__menu__link {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    color: #22d4fd;
+}
+
 .apresentacao {
-    padding: 5%;
+    padding: 5% 15%;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -26,12 +42,12 @@ body {
 }
 
 .apresentacao__conteudo__titulo {
-    font-size: 30px;
+    font-size: 36px;
     font-family: 'Sora', sans-serif;
 }
 
 .apresentacao__conteudo__texto {
-    font-size: 20px;
+    font-size: 24px;
     font-family: 'Montserrat', sans-serif;
 }
 
@@ -46,7 +62,7 @@ body {
 .apresentacao__links__subtitulo {
     font-family: 'Sora', sans-serif;
     font-weight: 400;
-    font-size: 20px;
+    font-size: 24px;
 }
 
 .apresentacao__links__link {
@@ -59,7 +75,7 @@ body {
     text-decoration: none;
     border-radius: 8px;
     font-family: 'Montserrat', sans-serif;
-    font-size: 20px;
+    font-size: 24px;
     font-weight: 600;
     padding: 5px 0;
     color: #f6f6f6;
@@ -83,7 +99,7 @@ body {
    color: #000000;
    background-color: #22d4fd; 
    text-align: center;
-   font-size: 18px;
+   font-size: 20px;
    padding: 12px;
 }
 
