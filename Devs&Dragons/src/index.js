@@ -1,35 +1,9 @@
 import { Personagem } from "./modules/personagem.js";
+import { personagemView } from "./components/personagem-view.js";
 
-// const personagemPedrinho = {
-//     nome: 'Pedrinho',
-//     vida: 7,
-//     mana: 12,
-//     level: 5,
-//     tipo: 'Mago',
-// }
+const personagemPedrinho = new Personagem('Pedrinho', 5, 'Mago');
+const personagemJose = new Personagem('José', 3, 'Arqueiro');
 
-// const personagemJose = {
-//     nome: 'Jose',
-//     vida: 7,
-//     mana: 6,
-//     level: 3,
-//     tipo: 'Arqueiro',
-// }
+const personagens = [personagemPedrinho, personagemJose];
 
-// const personagemAna = {
-//     nome: 'Ana',
-//     vida: 7,
-//     mana: 6,
-//     level: 3,
-//     tipo: 'Arqueiro',
-// }
-
-const personagemPedrinho = new Personagem();
-personagemPedrinho.nome = "Pedrinho";
-personagemPedrinho.mana = 12;
-personagemPedrinho.vida = 7;
-personagemPedrinho.level = 5;
-
-console.log(personagemPedrinho);
-
-
+new personagemView(personagens).render();
