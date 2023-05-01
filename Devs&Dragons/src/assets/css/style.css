@@ -288,25 +288,25 @@ header {
     background-repeat: no-repeat;
 }
 
-/*ArqueiroMago*/
+/*Arqueiro-Arcano*/
 
-.ArqueiroMago .container-superior {
+.Arqueiro-Arcano .container-superior {
     background-image: url(../img/fundo-carta-roxa.png);
 }
 
-.ArqueiroMago .container-inferior {
+.Arqueiro-Arcano .container-inferior {
     background-image: url(../img/retangulo-roxo.png);
 }
 
-.ArqueiroMago .combate {
+.Arqueiro-Arcano .combate {
     background-image: url(../img/combate-arqueiro-Mago.png);
 }
 
-.ArqueiroMago .level-texto {
+.Arqueiro-Arcano .level-texto {
     background: radial-gradient(#3D003F, #93278F);
 }
 
-.ArqueiroMago .imagem {
+.Arqueiro-Arcano .imagem {
     background-image: url(../img/arqueiro-mago.png);
     background-repeat: no-repeat;
 }
