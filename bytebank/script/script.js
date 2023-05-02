@@ -1,7 +1,6 @@
-import imprimeCotacao from "./imprimeCotacao.js";
+import selecionaCotacao from "./imprimeCotacao.js";
 
 const graficoDolar = document.getElementById('graficoDolar');
-
 const graficoParaDolar = new Chart(graficoDolar, {
     type: 'line',
     data: {
@@ -13,16 +12,6 @@ const graficoParaDolar = new Chart(graficoDolar, {
         }]
     },
 });
-
-setInterval(() => conectaAPI(), 5000);
-async function conectaAPI() {
-    const conecta = await fetch("https://economia.awesomeapi.com.br/json/last/USD-BRL");
-    const conectaTraduzido = await conecta.json();
-    let tempo = geraHorariro();
-    let valor = conectaTraduzido.USDBRL.ask;
-    adicionarDados(graficoParaDolar, tempo, valor);
-    imprimeCotacao('dolar', valor);
-}
 
 function geraHorariro() {
     let data = new Date();
@@ -38,3 +27,57 @@ function adicionarDados(grafico, legenda, dados) {
     });
     grafico.update();
 }
+
+let workerDolar = new Worker('/script/workers/workerDolar.js');
+workerDolar.postMessage('usd');
+
+workerDolar.addEventListener("message", event => {
+    let tempo = geraHorariro();
+    let valor = event.data.ask;
+    selecionaCotacao('dolar', valor);
+    adicionarDados(graficoParaDolar, tempo,valor);
+});
+
+const graficoIene = document.getElementById('graficoIene');
+const graficoParaIene = new Chart(graficoIene,  {
+    type: 'line',
+    data: {
+        labels: [],
+        datasets: [{
+            label: 'Iene',
+            data: [],
+            borderWidth: 1
+        }]
+    }, 
+});
+
+let workerIene = new Worker('/script/workers/workerIene.js');
+workerIene.postMessage('iene');
+workerIene.addEventListener('message', event => {
+    let tempo = geraHorariro();
+    let valor = event.data.ask;
+    selecionaCotacao('iene', valor);
+    adicionarDados(graficoParaIene, tempo,valor);
+});
+
+const graficoEuro = document.getElementById('graficoEuro');
+const graficoParaEuro = new Chart(graficoEuro,  {
+    type: 'line',
+    data: {
+        labels: [],
+        datasets: [{
+            label: 'Euro',
+            data: [],
+            borderWidth: 1
+        }]
+    }, 
+});
+
+let workerEuro = new Worker('/script/workers/workerEuro.js');
+workerEuro.postMessage('euro');
+workerEuro.addEventListener('message', event => {
+    let tempo = geraHorariro();
+    let valor = event.data.ask;
+    selecionaCotacao('euro', valor);
+    adicionarDados(graficoParaEuro, tempo,valor);
+});
