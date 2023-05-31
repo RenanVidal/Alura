@@ -15,5 +15,5 @@ export default function Header () {
                 <img src={search} alt="Icone de lupa" />
             </div>
         </header>
-    )
+    );
 }
