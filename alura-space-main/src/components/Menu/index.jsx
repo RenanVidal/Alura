@@ -8,7 +8,7 @@ import styles from './Menu.module.scss';
 
 export default function Menu() {
   return (
-    <nav className={styles.Menu}>
+    <nav className={styles.menu}>
         <ul className={styles.menu__lista}>
             <li className={styles.menu__item}>
                 <img src={home} alt="Icone da home" />
