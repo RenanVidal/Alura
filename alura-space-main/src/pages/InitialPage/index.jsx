@@ -1,5 +1,6 @@
 import Banner from '../../components/Banner';
-import Footer from '../../components/Footer';
+import Baseboard from '../../components/Baseboard';
+import Gallery from '../../components/Gallery';
 import Header from '../../components/Header';
 import Menu from '../../components/Menu';
 import styles from './InitialPage.module.scss';
@@ -15,7 +16,10 @@ export default function InitialPage () {
                     <Banner />
                 </section>
             </main>
-            <Footer />
+            <div>
+                <Gallery />
+            </div>
+            <Baseboard />
         </Fragment>
     );
 }
