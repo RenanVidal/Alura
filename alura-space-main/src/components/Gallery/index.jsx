@@ -3,10 +3,11 @@ import styles from './Gallery.module.scss';
 import Tags from '../Tags';
 import Cards from './Cards';
 import photos from './photos.json';
+import {useState} from 'react';
 
 export default function Gallery() {
   const [itens, setItens] = useState(photos);
-  const tags = [...new Set(photos.map((value) = value.tag))];
+  const tags = [...new Set(photos.map((value) => value.tag))];
 
   const filterPhotos = (tag) => {
     const newPhoto = photos.filter((photo) => {
@@ -18,7 +19,7 @@ export default function Gallery() {
   return (
     <section className={styles.gallery}>
         <h2>Navegue Pela Galeria</h2>
-        <Tags tags={tags} filterPhotos={filterPhotos} />
+        <Tags tags={tags} filterPhotos={filterPhotos} setItens={setItens} />
         <Cards itens={itens} styles={styles}/>
     </section>
   )
