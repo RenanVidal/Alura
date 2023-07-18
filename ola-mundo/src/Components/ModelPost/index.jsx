@@ -1,6 +1,5 @@
 import React from 'react';
 import styles from './ModelPost.module.css';
-import { children } from 'react';
 
 export default function ModelPost({children, coverPic, title}) {
   return (

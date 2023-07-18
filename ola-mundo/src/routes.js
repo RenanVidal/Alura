@@ -1,4 +1,4 @@
-import { BrowserRouter, Route, Router, Routes } from "react-router-dom";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import About from "./pages/About";
 import Opening from "./pages/Opening";
 import Menu from "./Components/Menu/Index";
@@ -14,7 +14,7 @@ function AppRoutes() {
 
       <ScrollToTop />
       <Menu />
-
+      
       <Routes>
         <Route path="/" element={<DefaultPage />}>
           <Route index element={<Opening />} />
